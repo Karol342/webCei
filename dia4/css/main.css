@@ -40,3 +40,61 @@
 .ej2.ej2-3 div{
     display: inline-block;
 }
+
+    /* Ejercicio 3 */
+.ej3 header{
+    background-color: #431B1B;
+    color: antiquewhite;
+    height: 75px;
+}
+.ej3 header img {
+    width: 80px;
+    height: 70px;
+    float: right;
+    
+}
+.ej3 header ul{
+    display: inline;
+    list-style: none;
+    position: absolute;
+    top: 28px;
+}
+
+.ej3 header li{
+    display: inline;
+}
+
+.ej3 header li a{
+    cursor: pointer;
+}
+
+.ej3 main{
+    background-color: #8a6060;
+    color: antiquewhite;
+    padding: 10px;
+    min-height: calc(100vh - 125px);
+    text-align: center;
+
+}
+.ej3 main img{
+    height: 250px;
+    width: 500px;
+}
+.ej3 main button {
+    background-color: transparent;
+    color:  #431B1B;
+    padding: 10px;
+}
+.ej3 main button:hover{
+    color: chocolate;
+}
+.ej3 footer{
+    padding-top: 15px;
+    background-color: #431B1B;
+    color: antiquewhite;
+    height: 50px;
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 400px;
+    height: 250px;
+}
+
+.fusion {
+    background-color: darkred;
+
+}
+
+.imagen-uno{
+    mix-blend-mode: multiply;
+}
+
+.imagen-dos{
+    mix-blend-mode: overlay;
+}
+
+.imagen-tres{
+    mix-blend-mode: screen;
+}
+.transformaciones {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+.angulo {
+    width: 100px;
+    height: 100px; 
+    margin: 50px;
+}
+.angulo:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    transform: skew(30deg, 20deg);
+}
+
+.angulo:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: perspective(500px) translate3d(10px, 0, 20px) rotateY(30deg);
+
+}
+
+.angulo:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(72, 180, 39);
+    transform: matrix(1, 2, 3, 4, 5, 6);
+}
+
+.degradados {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+.degradado {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+.degradado:nth-child(1){
+    background: linear-gradient(45deg, #ff416c, #351009);
+}
+
+.degradado:nth-child(2){
+    background: radial-gradient(circle, #789189, #08498a);
+}
+
+.degradado:nth-child(3){
+    background: conic-gradient(from 90deg, gold, orangered, gold);
+    
+}
+
+
+.contenedor {
+    height: 100vh;
+    background-image: url(/dia18/images/setasluces.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: #FAF8F7;
+}
+
+.backdrop {
+    backdrop-filter: blur(8px);
+    background-color: (255,255,255,0.3);
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    padding: 4rem;
+    border-radius: 15px;
+}

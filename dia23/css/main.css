@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#boton1, #boton2, #boton3 {
+    padding: 1rem 8%;
+    background-color: rgb(219, 215, 215);
+    border-radius: 10px;
+    margin: 3px;
+    border: 2px solid salmon;
+}
+
+#boton1:hover {
+    background-color: red;
+}
+
+#boton2:hover {
+    background-color: green;
+}

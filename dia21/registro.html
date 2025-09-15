@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Principal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">Bee...</a>
+
+        <div class="header__buscador">
+            <form action="https://www.google.com/search" method="get" target="_blank" class="buscador-form">
+                <input type="text" placeholder="Buscar..." name="b">
+                <button type="submit"><i class="bi bi-search-heart-fill"></i></button>
+            </form>
+        </div>
+        
+        <a class="header__login" href="login.html">Login</a>
+
+        <nav class="Header-nav">
+
+            <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa">
+            <label for="menu-hamburguesa" class="label-hamburguesa">
+                <i class="bi bi-list"></i>
+            </label>
+
+
+            <ul class="Nav-ul">
+                <li class="Nav-li"><a class="Nav-a" href="index.html">Inicio</a></li>
+                <li class="Nav-li"><a class="Nav-a" href="#">Galeria</a></li>
+                <li class="Nav-li"><a class="Nav-a" href="#">Artistas</a></li>
+                <li class="Nav-li"><a class="Nav-a" href="login.html">Login</a></li>
+                <li class="Nav-li"><a class="Nav-a" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <div class="registro">
+            <div class="form-registro">
+                <form action="#" method="get" autocomplete="off">
+                
+                <div class="registro-box">
+                <label class="registro-label" for="nombre">Nombre:</label>
+                <input class="registro-input" type="text" id="nombre" name="nombre" placeholder="Pepe" required>
+                </div>
+
+                <div class="registro-box">
+                <label class="registro-label" for="edad">Edad (entre 18 y 99):</label>
+                <input class="registro-input" type="number" id="edad" name="edad" min="18" max="99" placeholder="18">
+                </div>
+
+                <div class="registro-box">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input class="registro-input" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+
+                <div class="registro-box">
+                <label for="telefono">Telefono:</label>
+                <input class="registro-input" type="number" id="telefono" name="telefono" placeholder="91234567">
+                </div>
+
+                <div class="registro-box">
+                <label class="registro-label" for="ciudad">Ciudad:</label>
+                <input class="registro-input" list="ciudades" id="ciudad" name="ciudad" placeholder="Busca tu ciudad">
+                <datalist id="ciudades">
+                    <option value="Madrid">
+                    <option value="Barcelona">
+                    <option value="Valencia">
+                    <option value="Bilbao">
+                    <datalist id="ciudades">
+                </datalist>
+                </div>
+
+                <div class="registro-box">
+                <label class="registro-label" for="usuario">Nombre usuario:</label>
+                <input class="registro-input" type="text" id="usuario" name="usuario" placeholder="Pepe80" minlength="5" required>
+                </div>
+                
+                <div class="registro-box">
+                <label class="registro-label" for="email">Email:</label>
+                <input class="registro-input" type="email" id="email" name="email" placeholder="pepe@gmail.com">
+                </div>
+
+                <div class="registro-box">
+                <label class="registro-label" for="contrasenia">Contraseña (minimo 8 caracteres, una mayúscula, un número):</label>
+                <input class="registro-input" type="password" id="pass" name="contraseña"  placeholder="Escribe aqui tu contraseña" 
+                pattern="(?=.*[A-Z])(?=.*\d).{8,}" autocomplete="new-password">
+                </div>   
+                <input class="registro-input-submit" type="submit" value="Enviar formulario">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">&copy; 2025 Honey Bee Art. Conectando arte y almas.</p>
+        <p class="footer__p">Síguenos en nuestras redes: 
+            <a class="footer__link" href="https://instagram.com" class="footer__link">Instagram</a> 
+            <a class="footer__link" href="https://facebook.com" class="footer__link">Facebook</a>  
+            <a class="footer__link" href="https://pinterest.com" class="footer__link">Pinterest</a>
+        </p>
+    </footer>
+</body>
+</html>

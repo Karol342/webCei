@@ -1,0 +1,127 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.caja {
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+
+}
+
+.caja1 {
+    background-color: darkblue;
+    animation-name: agrandar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes agrandar {
+    from {
+        height: 100px;
+        width: 100px;
+    }
+    to {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.caja2 {
+    background-color: aquamarine;
+    animation-name: rotar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.caja3 {
+    animation-name: cambiacolor;
+    background-color: blue;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cambiacolor {
+    0% {
+        color: indigo;
+    }
+
+    25% {
+        color: rgb(248, 6, 196);
+    }
+
+    75% {
+        background-color: rgb(156, 6, 56);
+    }
+
+    100% {
+        background-color: rgb(240, 73, 73);
+    }
+}
+
+.titulo {
+    font-weight: bold;
+    color: green;
+    animation-name: parpadear;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 1s;
+}
+
+@keyframes parpadear {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.caja4 {
+    animation-name: izqdrcha;
+    background-color: rgb(40, 128, 40);
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    position: relative;
+}
+
+@keyframes izqdrcha {
+    0% {
+        left:0;
+    }
+    50% {
+        left: 300px;
+    }
+    100% {
+        left:0;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='jss/main.js'></script>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="images/ivan_iso.png" alt="logo">
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class= "header__a" href="index.html">Inicio</a></li>
+                <li class="header__li"><a class= "header__a" href="actividades.html">Actividades</a></li>
+                <li class="header__li"><a class= "header__a" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__contacto">
+        <section class="mapa">
+            <h2 class="mapa__h2">Nos encontrás en</h2>
+            <div class="mapa__mapa">
+                <iframe Class="mapa__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8776.497606275894!2d-0.5498819046971173!3d42.57023255289157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5780ec767847ed%3A0x196f61f8bc9a1be2!2s22700%20Jaca%2C%20Huesca!5e1!3m2!1ses!2ses!4v1752370770459!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="contacto">
+            <h2 class="contacto__h2">Contacta con nosotr@s</h2>
+            <form class="contacto__form">
+                <label class="contacto__label" for="nombre">Nombre</label>
+                <input class="contacto__input" type="text" placeholder="Pepe" id="nombre">
+                
+                
+                <label class="contacto__label" for="email">Email</label>
+                <input class="contacto__input" type="email" placeholder="ej@gmail.com" id="email">   
+            
+            
+                <label class="contacto__label" for="mensaje">Mensaje</label>
+                <textarea class="contacto__textarea" placeholder="Quiero saber mas..." id="mensaje"></textarea>
+
+                <input class="contacto__botton" class="enviar" type="submit" value="Enviar">
+        </form>
+        </section>
+        <h2 class="equipo__h2">Nuestro equipo </h2>
+        <section class="equipo">
+            <div class="equipo__div">
+            <img class="equipo__img" src="../dia7/images/rick.jpg">
+            <p>Rick</p>
+            </div>
+            <div class="equipo__div">
+            </p><img class="equipo__img" src="../dia7/images/morty.webp">
+            <p>Morty</p>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+        <a class="footer__a">Facebook</a>
+        <a class="footer__a">Instagram</a>
+        <a class="footer__a">Twiter</a>
+        <a class="footer__a">Youtube</a>
+</footer>
+</body>
+</html>

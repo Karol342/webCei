@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Bangers";
+    src: url(../font/Bangers/Bangers-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: calc(2vw + 10px);
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+button {
+    font-size: 4vw;
+}
+
+div {
+    width: 50vw;
+    padding: calc(2rem + 5px) ;
+}
+
+    /* Nivel 2*/
+
+.h1__adaptabilidad { 
+    font-size: 5vw;
+}
+
+.p__adaptabilidad {
+    max-width: 60vh;
+    line-height: 1.6em;
+    font-size: 2vh ;
+}
+
+    /*  Nivel 3 */
+
+.tipografia {
+    font-family: "Bangers" ;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+.h1__tipografia {
+    margin:20px 0 20px 0;
+    text-align: center;
+}
+
+    /*  Extra   */
+
+.extra {
+    padding: 1em;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1__extra, .h2__extra {
+    font-family: "Bangers" , sans-serif;
+    letter-spacing: 0.1em;
+    font-size: clamp(1.5rem,4vw,4rem);
+    margin: 10px 0 10px;
+}
+
+.h1__extra {
+    margin-top: 0;
+    color: darkblue;
+}
+
+.p__extra {
+    line-height: 1.3em;
+    max-width: 60ch;
+    text-align: justify;
+    font-size: 1em;
+    column-count: 1;
+    column-gap: 2em;
+}
+
+@media (min-width:700px){
+    .p__extra {
+        column-count: 2; 
+        max-width: 100vw;
+    }
+}

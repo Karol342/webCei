@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.boton, #boton_cajas, #raton, #contador, #click-button {
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: rgb(153, 179, 180);
+    color: aliceblue;
+}
+
+.caja, .caja__cambiacolor{
+    height: 100px;
+    width: 100px;
+    margin: 1rem;
+    background-color: blueviolet;
+    display: inline-block;
+}
+form {
+    width: 500px;
+    margin: auto;
+    padding: .8rem;
+
+}
+
+form > input {
+    display: block;
+    padding: .5rem;
+}
+
+.events {
+    background-color: beige;
+    margin: 1.5rem;
+}
+
+.events>h2 {
+    color: darkblue;
+    padding: .5rem;
+}
+
+.events>h3 {
+    color: blue;
+    margin-left: .8rem;
+}
+
+.events>p {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.oculto {
+    display: none;
+}
+
+textarea {
+    margin:1rem;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+}

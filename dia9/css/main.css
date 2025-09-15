@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal con container-type */
+.tarjeta-contenedor {
+  container-type: inline-size;
+  width: clamp(300px, 90%, 900px);
+  margin: auto;
+  margin-top: 50px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0003;
+}
+
+/* Tarjeta en grid responsive */
+.tarjeta {
+  display: grid;
+  grid-template-columns: minmax(min-content, 150px) minmax(200px, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+/* Imagen de perfil */
+.tarjeta__foto {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Información */
+.tarjeta__info {
+  text-align: left;
+}
+
+.tarjeta__nombre {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 0 0 0.5rem;
+  color: darkred;
+}
+
+.tarjeta__rol {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin: 0 0 1rem;
+  font-weight: bold;
+}
+
+.tarjeta__contacto {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  margin: 0;
+}
+
+/* 🟣 Layout vertical si el contenedor es estrecho */
+@container (max-width: 500px) {
+  .tarjeta {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .tarjeta__foto {
+    margin: auto;
+  }
+
+  .tarjeta__info {
+    text-align: center;
+  }
+}
+
+/* 🔵 Media query global para viewport general */
+@media (max-width: 400px) {
+  body {
+    background-color: #fafafa;
+  }
+}

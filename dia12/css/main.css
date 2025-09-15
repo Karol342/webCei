@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 300vh;
+}
+
+                    /*  Nivel 1 */
+.relative {
+    position: relative;
+    aspect-ratio: 1;
+    height: 300px;
+    background-color: darkcyan;
+}
+
+.absolute{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    right: 0;
+    background-color: darkblue;
+    padding: 10px;
+}
+            /*  Nivel 2 */
+/* Menu fijo */
+.fixed{         
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: rgb(214, 166, 45,0.9);
+    z-index: 1;
+}
+
+.img{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/zapatillaTendedero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Encabezado sticky */
+h1{
+    text-align: center;
+    padding: 5px;
+    color: #65BB98;
+}
+.sticky {
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    top: 0;
+    right: 0;
+    background-color: rgb(64, 16, 119);
+    z-index: 1;
+}
+
+        /* Nivel 3 */
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+    color: aliceblue;
+    text-align: center;
+}
+
+.absolut {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(52, 165, 127);
+
+}
+
+.transform {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    background-color: rgb(35, 126, 126);
+}
+
+.margin {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+}

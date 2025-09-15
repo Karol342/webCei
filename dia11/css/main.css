@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+    /*  Ejercicio 1 */
+
+.estructura {
+    font-family: sans-serif;
+    padding: 1.25rem;
+    background-color: #f4f4f4;
+}
+
+.main__estructura {
+    background-color: #ffff;
+    margin: 0.65rem 0 1.25rem;
+    padding: .9375rem;
+}
+
+.nota__estructura, .cite__estructura {
+    text-align: right;
+    font-weight: 600;
+}
+
+.aside__estructura {
+    background-color: #e9ecef;
+    padding: .9375rem;
+}
+
+
+.figure__estructura {
+    display: block;
+    background-color: #d6e0e9;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.img__estructura {
+    width: 30%;
+    border-radius: 2%;
+}
+
+.figcaption__estructura {
+    font-style: oblique;
+}
+
+                /*  Ejercicio 2 y 3*/
+
+        /* Header*/
+
+.semantica__header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #BE312E;
+}
+
+.header__h1, .header__p{
+    align-items: center;
+    text-align: center;
+    color: #F2CE32;
+}
+
+.semantica__nav {
+    background-color: #F2CE32;
+    padding: .625rem 1.25rem;
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content:center;
+}
+
+.nav__a {
+    text-decoration: none;
+    color: #BE312E;
+}
+
+.nav__a:hover {
+    font-weight: 900;
+}
+
+            /* footer */
+
+.semantica__footer {
+    text-align: center;
+    height: 7vh;
+    position: relative;
+    width: 100%;
+    background-color: #BE312E;
+    color: #F2CE32;
+
+}
+
+            /* main */
+.semantica__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 60vh);
+    padding: 1.25rem;
+    font-family: sans-serif;
+    background-color: darkgrey;
+}
+
+.main__section {
+}
+.section__h2, .articulo__h2 {
+    margin-bottom: .625rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-align: center;
+}
+
+.main__articulo {
+}
+
+.section__p, .articulo__p {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.articulo__time {
+    display: block;
+    font-style: italic;
+    text-align: right;
+}
+
+
+            /* Figura */
+.main__figure {
+    text-align: center;
+}
+
+.figure__img {
+    max-width: 50%;
+    border-radius: 2%;
+}
+
+.figure__figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    text-align: center;
+}

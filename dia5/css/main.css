@@ -3,13 +3,13 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
         /* Header */
 
 header{
     color: #0C0670;
+    font-family: "Questrial", sans-serif;
     display: flex;
     background-color: cadetblue;
     height: 75px;
@@ -51,6 +51,9 @@ main {
     padding: 25px 10vw;
 }
 
+p{
+    padding: 20px 0 20px;
+}
 .img {
     display: flex;
     width: 25vw;
@@ -69,9 +72,10 @@ main button:hover {
 }
 
         /* Footer */
-        
+
 footer{
     color: #0C0670;
+    font-family: "Questrial", sans-serif;
     display: flex;
     justify-content: space-evenly;
     padding-top: 15px;

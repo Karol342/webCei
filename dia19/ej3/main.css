@@ -1,0 +1,53 @@
+body {
+    height: 3000px;
+}
+
+.caja {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    position: fixed;
+    top: 100px;
+    animation-name: moverX;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+}
+
+@keyframes moverX {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(90vw);
+    }
+    }
+
+.caja2 {
+    width: 100px;
+    height: 100px;
+    background: rgb(93, 220, 20);
+    animation: mover 2s forwards;
+    }
+
+@keyframes mover {
+    from { 
+        transform: translateX(0); 
+    }
+    to { 
+        transform: translateX(300px);
+    }
+    }
+
+.caja3 {
+    width: 100px;
+    height: 100px;
+    background: rgb(24, 132, 139);
+    animation: mover 2s forwards;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+
+
+

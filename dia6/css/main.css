@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+        /* Header */
+
+header{
+    display: flex;
+    background-color:black;
+    height: 75px;
+    justify-content:center;
+    align-items: center;
+    padding: 3vh ;
+}
+
+header ul,li{
+    display: flex;
+    gap: 5vw;
+}
+
+header a {
+    font-size: 2.7vh;
+    color: #B3800B;
+    text-decoration: none;
+}
+
+header img {
+    width: 50px;
+    position: absolute;
+    left: 8px;   
+}
+
+header a:hover{
+    color: #42bbab;;
+}
+
+  /* Footer */
+
+footer{
+    background-color: #161f1f;
+    color: #B3800B;
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    height: 50px;
+}
+
+            /* Main */
+
+.principal {
+    background: linear-gradient(#262928,#28474d);
+    justify-content: center;    
+    min-height: calc(100vh - 125px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+}
+
+.principal h2{
+    font-family: "Questrial", sans-serif;;
+    padding: 9px;
+    color: #B3800B;;
+}
+.principal p{
+    text-align: justify;
+    font-size: 18px;
+    color: #a38a51;
+    margin: 5px 15px 0 15px;
+}
+
+.principal button {
+    color:  #13110d;
+    background-color: #B3800B;
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+
+.principal button:hover {
+    background-color: #13110d;
+    color: #B3800B;
+}
+
+.principal button:active{
+    transform: translateY(-5px);
+}
+
+        /* Main actividades */
+
+.actividades {
+    background: linear-gradient(#262928,#28474d);  
+    min-height: calc(100vh - 125px);
+    color: darkred;
+    font-size: 4vw;
+    font-family: "Questrial", sans-serif;
+    font-weight: bold;
+}
+
+.actividades li,a {
+    margin-left: 15px;
+}
+
+.actividades_section{
+    width: 70%;
+    padding: 5px;
+    margin:auto;
+}
+
+.escalada{
+    background-image: url(../images/escaladas.jpg);
+}
+
+.barranco{
+    background-image: url(../images/barrancos.JPG);
+}
+
+.viaferrata {
+    background-image: url(../images/viasferratas.JPG);
+}
+
+.crestas {
+    background-image: url(../images/montania.JPG); 
+
+}
+
+.barranco, .escalada, .viaferrata, .crestas {
+    display: flex;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    border-radius: 3%;
+}
+
+
+        /* Main contacto */
+
+.contacto {
+    background:#262928;
+    justify-content: center;    
+    min-height: calc(100vh - 125px);
+    text-align: center;
+    padding: 25px 10vw;
+}
+.contacto h2{
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.contacto form {
+    color: rgb(160, 156, 156);
+    max-width: 50%;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+    
+}
+
+.contacto label {
+    display: block;
+    padding: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.contacto input {
+    border-radius: 5px;
+    display: block;
+    margin:auto;
+    width: 70%;
+}
+
+.contacto textarea{
+    width: 70%;
+    height: 80px;
+    border-radius:5px;
+    margin-bottom: 5px;
+}
+
+.contacto .enviar {
+    background-color: whitesmoke;
+    color:#161f1f;
+    border-radius: 12px;
+    margin:auto;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+.contacto .enviar:hover{
+    background-color: #1e2521;
+    color: whitesmoke;
+}
+
+.contacto .enviar:active{
+    transform: translateY(-5px)
+}
+
+
+      

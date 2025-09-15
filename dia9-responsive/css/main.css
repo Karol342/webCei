@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.uno {
+    width: 100%;
+    height: 100vh;
+    background-color: darkcyan;
+    container-type: size;
+}
+
+.div{
+    width: 50vw;
+    height: 50vh;
+    background-color: darkred;
+    border: 1px solid black;
+}
+
+.div__padre{
+    width: 100vw;
+    height: 100vh;
+    container-type: inline-size;
+    background-color: rgb(15, 44, 44);
+    color: bisque;
+}
+
+.div__hijo{
+    width: min(90%600px);
+    margin: max(1rem,5vw);
+    font-size: clamp(1rem,5vw,3rem);
+    text-align: center;
+}
+
+.card__contenedor{
+    display: flex;
+    container-type: size;
+    color: darkred;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-image:url(../images/HERO5.jpg);
+    background-size: cover;
+    width:clamp(300px,80%,900px);
+    padding: 10px 10px;
+    box-shadow: 0 0 35px 0 #0007;
+    border-radius: 8px;
+}
+
+.card__titulos {
+    font-size: clamp(1rem,5vw,3rem);
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+@container (max-width: 500px) {
+    .card {
+        background-image: url(../images/programacion.jpg);
+        color:#d6b5d0;
+    }
+}
+
+@media (max-width:480px){
+    .uno{
+        background-color: red;
+    }
+}
+@media (min-width:481px) and (max-width:780px){
+    .uno{
+        background-color: yellow;
+    }
+}
+@media (min-width:781px) and (max-width:1200px){
+    .uno{
+        background-color: green;
+    }
+}
+@media (min-width:1201px){
+    .uno{
+        background-color: blue;
+    }
+}
+
+@media print {
+    .div {
+        background-color: green;
+    }
+} 
+
+@container (min-width:780px){
+    .div__hijo {
+        background-color: crimson;
+        font-weight: bold;
+        color: black;
+    }
+}
+

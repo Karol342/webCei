@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 500px;
+}
+
+.imagen-uno {
+    filter: blur(3px);
+}
+
+.imagen-dos {
+    filter: brightness(0.4);
+}
+
+.imagen-tres {
+    filter: contrast(200%);
+}
+
+.imagen-cuatro {
+    filter: drop-shadow(16px 16px 20px blue);
+}
+
+.imagen-cinco {
+    filter: grayscale(50%);
+}
+
+.imagen-seis {
+    filter: hue-rotate(90deg);
+}
+
+.imagen-siete {
+    filter: invert(75%);
+}
+
+.imagen-ocho {
+    filter: opacity(25%);
+}
+
+.imagen-nueve {
+    filter: saturate(30%);
+}
+
+.imagen-diez {
+    filter: sepia(60%);
+}
+
+.sombra {
+    height:250px;
+    width: 250px;
+    background-color: darkslategray;
+    color: lightskyblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js' defer></script>
+</head>
+<body class="events">
+    <h2>Mouse events</h2>
+
+    <h3>Click - el más usado</h3> 
+    <p> element.addEventListener('click', function(e) {
+        console.log('Elemento clickeado');
+        });</p>
+
+    <h3>Hover effects</h3>
+    <p>element.addEventListener('mouseenter', function(e) {});</p>
+    <p>element.addEventListener('mouseleave', function(e) {});</p>
+
+    <h3>Mouse sobre elemento</h3>
+    <p>element.addEventListener('mouseover', function(e) {});</p>
+
+    <h2>Form events</h2>
+    <h3>Submit - envío de formularios</h3>
+    <p>form.addEventListener('submit', function(e) {
+    e.preventDefault()});</p>
+
+    <h3>Input - cambios en tiempo real</h3>
+    <p>input.addEventListener('input', function(e) {
+    console.log('Valor actual:', e.target.value);});</p>
+
+    <h3>Change</h3>
+    <p>select.addEventListener('change', function(e) {
+    console.log('Opción seleccionada:', e.target.value);});</p>
+
+    <h3> Focus y Blur</h3>
+    <p>input.addEventListener('focus', function(e) {});</p>
+    <p>input.addEventListener('blur', function(e) {});</p>
+
+    <h2>Keyboard events</h2>
+    <h3>Keydown - tecla presionada</h3>
+    <p>document.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+        console.log('Enter presionado');
+    }
+    if (e.key === 'Escape') {}
+    });
+    input.addEventListener('keyup', function(e) {});</p>
+    <h2>DOM Event</h2>
+    <h3>DOMContentLoaded</h3>
+    <p>document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM listo');
+    });
+    </p>
+    <h3>Load</h3>
+    <p>window.addEventListener('load', function() {
+    });
+    </p>
+    <h3>Resize</h3>
+    <p>window.addEventListener('resize', function() {
+    console.log('Ventana redimensionada');
+    });</p>
+    <h3> Scroll </h3>
+    <p>window.addEventListener('scroll', function() {
+    console.log('Scroll position:', window.scrollY);
+    });</p>
+    <h2>Even Touch</h2>
+    <p>element.addEventListener('touchstart', function(e) {
+    });// Toque iniciado</p>
+    <p>element.addEventListener('touchend', function(e) {
+    });// Toque terminado</p>
+    <p>element.addEventListener('touchmove', function(e) {
+    e.preventDefault(); // Prevenir scroll}); // Deslizamiento</p>
+</body>
+</html>

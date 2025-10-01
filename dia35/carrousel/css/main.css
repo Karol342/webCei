@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.carrousel{
+    width: 90%;
+    max-width: 60em;
+    border-radius: 15px;
+    padding: 2em;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    overflow: hidden;
+
+}
+
+.carrousel .grande{
+    width: 300%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    transition: all .5s ease;
+    transform: translateX(0%);
+    background-color: #f0f0f0;
+}
+
+.carrousel .img{
+    width: calc( 100%/3 -2em );
+    min-height: 10vh;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrousel .puntos{
+    width: 100%;
+    padding: 1em;
+    gap: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    list-style: none;
+}
+
+.carrousel .punto{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrousel .punto.activo {
+    background-color: black;
+}

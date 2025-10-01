@@ -1,0 +1,24 @@
+:root {
+    --primary-100: #D9A871;
+    --primary-200: #ba8c56;
+    --primary-300: #744d1a;
+    --accent-100: #FFD166;
+    --accent-200: #957200;
+    --text-100: #4A4A4A;
+    --text-200: #767676;
+    --bg-100: #FDF1D3;
+    --bg-200: #f3e7c9;
+    --bg-300: #cabea2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-100);
+    color: var(--text-100);
+}

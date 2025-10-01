@@ -4,7 +4,10 @@
     border: 0;
     box-sizing: border-box;
 }
-
+body {
+    height: 100%;
+    
+}
 .boton, #boton_cajas, #raton, #contador, #click-button {
     display: block;
     padding: 1rem;
@@ -39,12 +42,12 @@ form > input {
 }
 
 .events>h2 {
-    color: darkblue;
+    color: darkred;
     padding: .5rem;
 }
 
 .events>h3 {
-    color: blue;
+    color: red;
     margin-left: .8rem;
 }
 

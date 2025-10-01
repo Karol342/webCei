@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src='js/main.js' defer></script>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li class="tab active" data-id="1">Ejercicio 1</li>
+            <li class="tab" data-id="2">Ejercicio 2</li>
+            <li class="tab" data-id="3">Ejercicio 3</li>
+            <li class="tab" data-id="4">Ejercicio 4</li>
+        </ul>
+
+    </header>
+    <main>
+        <div class="content active">
+            <h2>Ejercicio 1</h2>
+            <div class="div-container">
+                <div class="carta">
+                    <div class="inner">
+                        <div class=" frente"></div>
+                        <div class=" dorso"></div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="inner">
+                        <div class=" frente"></div>
+                        <div class=" dorso"></div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="inner">
+                        <div class=" frente"></div>
+                        <div class=" dorso"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Ejercicio 2</h2>
+            <video width="400" muted autoplay loop>
+                <source src="video/14285882_540_808_25fps.mp4" type="video/mp4">
+                <source src="video/14285882_540_808_25fps.mp4" type="video/ogg">
+                Your browser does not support HTML video
+            </video>
+        </div>
+        <div class="content">
+            <h2>Ejercicio 3</h2>
+            <input id="number" type="number" min="1" max="9" oninput="validate(this)">
+            <br>
+            <button id="check">Comprobar</button>
+            <br>
+            <span id="span"></span>
+        </div>
+        <div class="content">
+            <h2>Ejercicio 4</h2>
+            <button id="toastify" class="btn">Pulsame</button>
+        </div>
+    </main>
+
+</body>
+
+</html>

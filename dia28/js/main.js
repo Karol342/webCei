@@ -13,7 +13,7 @@ function colorAleatorio() {
 //funcion para cambiarcolor
 function cambiaColor (event){
     const nuevoColor = colorAleatorio();
-    event.target.style.backgroundColor = colorAleatorio();
+    event.target.style.backgroundColor = nuevoColor;
 };
 
 const botones = document.querySelectorAll('.boton');
@@ -34,7 +34,7 @@ botonCajas.addEventListener('click', () => {
 // Ej 2-3 Crea una web que capture el movimiento del ratón. Cada vez que se mueva, imprime su posición (x, y) en consola.
 const movRaton = document.getElementById('raton');
 
-document.addEventListener('mouseover',(e) => {
+document.addEventListener('mousemove',(e) => {
     movRaton.innerText=`X: ${e.clientX}, Y: ${e.clientY}`;
 });
 
@@ -65,7 +65,7 @@ const clickButton = document.getElementById('click-button');
             this.textContent = 'Ocultar mensaje'; // cambiamos el texto del boton a ocultar mensaje
         }else {
             mensaje.classList.add('oculto'); //añade la clase para ocultarlo
-            this.textContent = 'Mostrar Mensaje Secreto'; //cambiamos el texto del boton
+            this.textContent = 'Mostrar Mensaje'; //cambiamos el texto del boton
         }
     });
 
@@ -76,7 +76,7 @@ const caracterContador = document.getElementById('caracter-contador');
 textoContador.addEventListener('input', (e) => {
 const longitud = e.target.value.length;
 caracterContador.textContent = longitud;
-function longitud() {
+
     if( longitud > 150 ) {
         caracterContador.style.color = 'red';
     } else if (longitud > 100 ) {
@@ -84,22 +84,22 @@ function longitud() {
     } else {
         caracterContador.style.color= ' yellow';
 
-    }};
+    };
     
 });
 
 
-// Ej 3-2 Crea una web donde uses: preventDefault() en un formulario para evitar el envío. stopPropagation() en un div dentro de otro para que no se propague el evento. once para que un botón solo pueda hacer una acción una sola vez.
+// Crea una web donde uses: preventDefault() en un formulario para evitar el envío. stopPropagation() en un div dentro de otro para que no se propague el evento. once para que un botón solo pueda hacer una acción una sola vez.
     const form = document.getElementById('miFormnulario');
     form.addEventListener('submit',(e) => {
-        e.preventDefault();     //evita el bloqueo
+        e.preventDefault();    
         console.log('Formulario bloqueado');
-    },{ once:true});
-
-    form.addEventListener('sumit',(e) => {
-        e.stopPropagation();    //no llega a otros listeners padres
     });
 
-// Ej 3-3 Crea un ejercicio donde se use correctamente la palabra clave this.Por ejemplo, varios botones que cambien su propio texto o estilo usando this.
+    form.addEventListener('sumit',(e) => {
+        e.stopPropagation();  
+    });
+
+
     
     

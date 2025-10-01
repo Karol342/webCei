@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js' defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav__container">
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="#" class = "nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class = "nav__link">Servicios</a>
+                    <div class="desplegable">
+                        <a href="#" class="desplegable__item">Imagenes</a>
+                        <a href="#" class="desplegable__item">Videos</a>
+                        <a href="#" class="desplegable__item">Mapas</a>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class = "nav__link">Login</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class = "nav__link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1 id="titulo">Selecciona un opcion</h1>
+
+        <h3>Lightbox</h3>
+        <div class="container">
+            <img onclick="open_img(this.src)" src="img/brooke-balentine-bmSpNZIjmHs-unsplash.jpg">
+            <img onclick="open_img(this.src)" src="img/annie-spratt-aRnOt6xDl2I-unsplash.jpg">
+            <img onclick="open_img(this.src)" src="img/maxim-nikiforov-FCeYokS_sg8-unsplash.jpg">
+            <img onclick="open_img(this.src)" src="img/annie-spratt-aRnOt6xDl2I-unsplash.jpg">
+            <img onclick="open_img(this.src)" src="img/brooke-balentine-bmSpNZIjmHs-unsplash.jpg">
+            <div id="lightbox">
+                <!-- <div id="background"></div> Lo comento para que funcione el boton X para cerrar -->
+                <img src="" alt ="Imagen ampliada">
+                <button class="lightbox__close" onclick="close_img()">X</button>
+            </div>
+        </div>
+
+        
+        <!-- Contenedor con aria-hidden    -->
+        <button class="toggle-btn" id="toggleBtn" aria-expanded="true" aria-controls="galeriaContainer">Ocultar Galeria</button>
+        <div class="galeria-container" id="galeriaContainer" aria-hidden="false">
+            
+            <h3>Galeria de imagenes</h3>
+            <div class="galeria">
+                <img data-src="img/pexels-eberhardgross-1624503.jpg">
+                <img data-src="img/pexels-karolina-grabowska-4622893.jpg">
+                <img data-src="img/pexels-eberhardgross-1699027.jpg">
+                <img data-src="img/pexels-eberhardgross-2310642.jpg">
+                <img data-src="img/pexels-jonathanborba-2888492.jpg">
+                <img data-src="img/pexels-maxandrey-1366630.jpg">
+                <img data-src="img/pexels-stywo-1261731.jpg">
+            </div>
+        </div>
+        <!-- Boton con aria-exapnded  -->
+    </main>
+
+</body>
+</html>

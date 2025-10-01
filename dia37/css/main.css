@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 140vh;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    max-width: 100%;
+    position: relative;
+}
+
+.parallax-uno{
+    background-image: url('../img/CKLHVV7JPE.jpg');
+}
+
+.parallax-dos{
+    background-image: url('../img/WXREXGYBC6.jpg');
+}
+
+.parallax-tres{
+    background-image: url('../img/YYDQ01GHEB.jpg');
+}

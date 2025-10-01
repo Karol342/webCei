@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.botonUno, .botonDos ,.botonTres , .botonCuatro{
+    padding: 1rem 2%;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.divUno, .divDos {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: lightseagreen;
+}
+.animacion {
+    transition: all .5s ease;
+    transform: rotate(45deg);
+    animation:animacionCompleja 2s ease-in-out forwards;
+}
+
+@keyframes animacionCompleja {
+    0% {
+        transform: scale(0.5) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.parrafo {
+    background-color: red;
+    transition: all 0.5s ease;
+
+}
+
+.desvanecimiento {
+    opacity: 0.3;           
+    transform: scale(0.9);  
+}
+
+.aumentar {
+    height: 200px;
+    width: 200px;
+}
+
+.transicion {
+    transition: all .5s ease;
+}

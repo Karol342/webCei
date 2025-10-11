@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+}
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+p {
+    margin: 40px 0px;
+    border: 1px solid black;
+    padding: 1.25rem;
+}
+
+#container{
+    transition: opacity .5s;
+}
+
+.fade-in{
+    opacity: 0;
+}
